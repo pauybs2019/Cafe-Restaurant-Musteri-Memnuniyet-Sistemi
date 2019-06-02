@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{56003D94-7BBF-4021-9BE7-E1B2C731365B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>cafeotomasyon</RootNamespace>
+    <AssemblyName>cafeotomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cafeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cafeDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cafeDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Degerlendirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Degerlendirme.Designer.cs">
+      <DependentUpon>Degerlendirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasa.Designer.cs">
+      <DependentUpon>Kasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masalar.Designer.cs">
+      <DependentUpon>Masalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menü.Designer.cs">
+      <DependentUpon>Menü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteriler.Designer.cs">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mutfak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mutfak.Designer.cs">
+      <DependentUpon>Mutfak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odeme.Designer.cs">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rezarvasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rezarvasyon.Designer.cs">
+      <DependentUpon>Rezarvasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Siparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siparis.Designer.cs">
+      <DependentUpon>Siparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YetkiliGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YetkiliGiris.Designer.cs">
+      <DependentUpon>YetkiliGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Yonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yonetici.Designer.cs">
+      <DependentUpon>Yonetici.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Degerlendirme.resx">
+      <DependentUpon>Degerlendirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasa.resx">
+      <DependentUpon>Kasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masalar.resx">
+      <DependentUpon>Masalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menü.resx">
+      <DependentUpon>Menü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteriler.resx">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mutfak.resx">
+      <DependentUpon>Mutfak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odeme.resx">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rezarvasyon.resx">
+      <DependentUpon>Rezarvasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Siparis.resx">
+      <DependentUpon>Siparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YetkiliGiris.resx">
+      <DependentUpon>YetkiliGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Yonetici.resx">
+      <DependentUpon>Yonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="cafeDataSet.xsc">
+      <DependentUpon>cafeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeDataSet.xss">
+      <DependentUpon>cafeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet1.xsc">
+      <DependentUpon>cafeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeDataSet1.xss">
+      <DependentUpon>cafeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet10.xsc">
+      <DependentUpon>cafeDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeDataSet10.xss">
+      <DependentUpon>cafeDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet11.xsc">
+      <DependentUpon>cafeDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeDataSet11.xss">
+      <DependentUpon>cafeDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet12.xsc">
+      <DependentUpon>cafeDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeDataSet12.xss">
+      <DependentUpon>cafeDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet13.xsc">
+      <DependentUpon>cafeDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeDataSet13.xss">
+      <DependentUpon>cafeDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet14.xsc">
+      <DependentUpon>cafeDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeDataSet14.xss">
+      <DependentUpon>cafeDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet2.xsc">
+      <DependentUpon>cafeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeDataSet2.xss">
+      <DependentUpon>cafeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet3.xsc">
+      <DependentUpon>cafeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeDataSet3.xss">
+      <DependentUpon>cafeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet4.xsc">
+      <DependentUpon>cafeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeDataSet4.xss">
+      <DependentUpon>cafeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet5.xsc">
+      <DependentUpon>cafeDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeDataSet5.xss">
+      <DependentUpon>cafeDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet6.xsc">
+      <DependentUpon>cafeDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeDataSet6.xss">
+      <DependentUpon>cafeDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet7.xsc">
+      <DependentUpon>cafeDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeDataSet7.xss">
+      <DependentUpon>cafeDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet8.xsc">
+      <DependentUpon>cafeDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeDataSet8.xss">
+      <DependentUpon>cafeDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet9.xsc">
+      <DependentUpon>cafeDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="cafeDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cafeDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="cafeDataSet9.xss">
+      <DependentUpon>cafeDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resimler\anayemekicon2.png" />
+    <Content Include="resimler\bosmasa.png" />
+    <Content Include="resimler\butonödeme2.png" />
+    <Content Include="resimler\cikis2.png" />
+    <Content Include="resimler\dolumasa.png" />
+    <Content Include="resimler\fastfoodicon.png" />
+    <Content Include="resimler\geridön.png" />
+    <Content Include="resimler\giris.png" />
+    <Content Include="resimler\hesapkapatbuton.png" />
+    <Content Include="resimler\hesapödeme4.png" />
+    <Content Include="resimler\hesapözetbuton.png" />
+    <Content Include="resimler\kasa.png" />
+    <Content Include="resimler\kasaarkaplan.jpg" />
+    <Content Include="resimler\kilit.png" />
+    <Content Include="resimler\kullanicigirisi.jpg" />
+    <Content Include="resimler\logo.png" />
+    <Content Include="resimler\makarnaicon.png" />
+    <Content Include="resimler\masa.png" />
+    <Content Include="resimler\masalararkaplan9.jpg" />
+    <Content Include="resimler\masarezarvasyon.png" />
+    <Content Include="resimler\musterisil.png" />
+    <Content Include="resimler\mutfakarkaplan5.jpg" />
+    <Content Include="resimler\mutfakicon.png" />
+    <Content Include="resimler\müsteriguncelle.png" />
+    <Content Include="resimler\müsteriler.png" />
+    <Content Include="resimler\müsterileradisyonbul.png" />
+    <Content Include="resimler\müsterilerarkaplan3.jpg" />
+    <Content Include="resimler\müsterilersiparis.png" />
+    <Content Include="resimler\müsterisec.png" />
+    <Content Include="resimler\paketservis2.png" />
+    <Content Include="resimler\pizzabuton2.png" />
+    <Content Include="resimler\rezarvasyon.png" />
+    <Content Include="resimler\rezarvasyonarkaplan.jpg" />
+    <Content Include="resimler\rezarvasyonbuton.png" />
+    <Content Include="resimler\salataiconpng.png" />
+    <Content Include="resimler\sicakicecekicon2.png" />
+    <Content Include="resimler\silmebuton2.png" />
+    <Content Include="resimler\siparisarkaplan4.jpg" />
+    <Content Include="resimler\siparisbuton3.png" />
+    <Content Include="resimler\sogukicecekicon.png" />
+    <Content Include="resimler\tatliicon2.png" />
+    <Content Include="resimler\yenimüsteriekle2.png" />
+    <Content Include="resimler\Yenimüsterikayit4.jpg" />
+    <Content Include="resimler\urunguncellebuton.png" />
+    <Content Include="resimler\ürüneklebuton.png" />
+    <Content Include="resimler\ürüngösterbuton.png" />
+    <Content Include="resimler\ürünsilbuton.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
